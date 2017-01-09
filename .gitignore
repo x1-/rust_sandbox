@@ -1,0 +1,19 @@
+target
+
+# Exclude OS X folder attributes
+.DS_Store
+._*
+
+# Exclude temp nibs and swap files
+*~.nib
+*.swp
+
+# Exclude VSCode settings
+.vscode/
+
+# Exclude emacs backup files
+\#*\#
+.\#*
+
+# backup files
+*~
