@@ -8,7 +8,7 @@ pub fn parse_str() {
   "tag": [ "movie", "book" ]
 }"# ).unwrap();
 
-    println!("*---*---*---*---*---*");
+    println!("\n*---*---*---*---*---*");
     println!("parse_str");
     println!("*---*---*---*---*---*");
 
@@ -41,7 +41,7 @@ pub fn serialize() {
     let encoded = json::encode( &person ).unwrap();
     let decoded: Person = json::decode( &encoded ).unwrap();
 
-    println!("*---*---*---*---*---*");
+    println!("\n*---*---*---*---*---*");
     println!("serialize");
     println!("*---*---*---*---*---*");
     println!("encoded: {}", encoded);
@@ -95,7 +95,7 @@ pub fn custom_mapping() {
     let json = mail.to_json();
     let text = json.to_string();
 
-    println!("*---*---*---*---*---*");
+    println!("\n*---*---*---*---*---*");
     println!("custom_mapping");
     println!("*---*---*---*---*---*");
     println!("text: {}", text);
